@@ -1,0 +1,52 @@
+<div id="home">
+  <div class="navfix"> </div>
+
+  <div class="main-container">
+    <div class="profile-header">
+      <div class="profile-img-container">
+         <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/574931_10150791791759539_1016312036_n.jpg?oh=0395ba41445af4f5a5beaab20b2d2986&oe=59D2A84B" alt="Greg Royan" @click="goToHome()">
+      </div>
+      <div class="profile-header-info">
+        <h1> Greg Royan </h1>
+        <div class="bold title"> Senior Front-End Developer </div>
+        <div class="social"> <i class="fa fa-envelope fa-fx"></i> <a href="mailto:groyan1@gmail.com" target="_blank"> groyan1@gmail.com </a> </div>
+        <div class="social"> <i class="fa fa-phone fa-fx"></i> (506) 645-9506 </div>
+        <div class="social"> <i class="fa fa-twitter fa-fx"></i> <a href="https://twitter.com/groyan" target="_blank"> https://twitter.com/groyan </a> </div>
+        <div class="social"> <i class="fa fa-github fa-fx"></i> <a href="https://github.com/groy" target="_blank"> https://github.com/groy </a> </div>
+        <div class="social"> <i class="fa fa-linkedin fa-fx"></i> <a href="https://www.linkedin.com/in/greg-royan-93a06b45" target="_blank"> https://www.linkedin.com/in/greg-royan-93a06b45 </a> </div>
+      </div>
+    </div>
+    <div class="profile-callouts">
+      <div class="callout"> 
+        <h3> JavaScript </h3>
+        <ul>
+          <li v-for="item in javascript">
+           <skill :skill-name="item.label" :skill-value="item.value"></skill>
+          </li>
+        </ul>
+      </div>
+      <div class="callout">
+        <h3> HTML / CSS </h3>
+        <ul>
+          <li v-for="item in html">
+           <skill :skill-name="item.label" :skill-value="item.value"></skill>
+          </li>
+        </ul>
+      </div>
+      <div class="callout">
+        <h3> Package Bundling </h3>
+        <ul>
+          <li v-for="item in bundling">
+           <skill :skill-name="item.label" :skill-value="item.value"></skill>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="gen-callout">
+      <h3> General Development </h3>
+      <ul>
+        <li v-for="item in generalDev"><skill :skill-name="item.label" :skill-value="item.value"></skill></li>
+      </ul>
+    </div>
+  </div>
+</div>

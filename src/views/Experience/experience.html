@@ -1,0 +1,44 @@
+<div id="experience">
+  <div class="navfix"> </div>
+
+  <div class="experience-card" v-for="job in jobs">
+    <h3>{{ job.companyName }}</h3>
+    <div class="bold">{{ job.role }}</div>
+    <div>
+      {{ job.dates }}
+    </div>
+
+    <div>
+      <ul class="experience-description">
+        <li v-for="item in job.descriptionPoints">{{ item }}</li>
+      </ul>
+    </div>
+    <div class="projects">
+      <h3 class="header">Projects</h3>
+      <div v-for="project in job.projects" >
+        <div class="project-name">
+          <span class="bold"> {{ project.projectName }} </span> <span v-if="project.duration" class="project-duration"> - {{ project.duration }}</span>
+        </div>
+        <div class="desc-grid">
+          <div v-for="description in project.descriptions">
+            <i class="fa fa-minus fa-fx"></i> {{ description }}
+          </div>
+          <div v-if="project.images" v-for="img in project.images" class="img-container">
+            <img :src="img.asset" @click="fullScreenImage(img.asset)" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <el-dialog
+    id="imageDialog"
+    title="Sample Work" 
+    v-model="imgDialogVisbile"
+    size="medium"
+    v-cloak
+    >
+    <img :src="displayImg" />
+  </el-dialog>
+
+</div>

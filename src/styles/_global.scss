@@ -1,0 +1,79 @@
+@import '~font-awesome/scss/font-awesome.scss';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  color: $color-light-black;
+  background-color: $color-background;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  a {
+    color: $color-teal;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-yellow;
+      text-decoration:  none;
+    }
+  }
+}
+
+#app {
+  position: relative;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.navfix {
+  padding-top: $height-nav + 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 750px;
+  }
+  @media screen and (min-width: 992px) {
+    width: 970px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
+h2, h3, h4, h5, p {
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, p {
+  // Text elements will not have default top margin
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+[v-cloak] {
+  // for Vue.js, hides element until Vue.js fully loads
+  display: none;
+}
