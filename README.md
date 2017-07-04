@@ -9,7 +9,7 @@
 
 
 
-Clone the repo: `git clone git@github.com:groy/repable-teams.git`
+Clone the repo: `git clone git@github.com:groy/groy-vuejs-portfolio.git`
 
 
 
