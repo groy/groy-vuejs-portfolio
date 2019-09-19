@@ -1,5 +1,5 @@
 <template>
-  <div class="container navbar__container">
+  <div id="nav" class="container navbar__container">
     <div class="flex justify-space navbar__main">
       <div class="flex">
         <div class="navbar__brand">
@@ -121,7 +121,7 @@
 </script>
 
 <style lang="scss">
-.container {
+#nav {
   img {
     border-radius: 50%;
     overflow: hidden;

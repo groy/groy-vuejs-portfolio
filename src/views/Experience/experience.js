@@ -3,6 +3,7 @@ import template from './experience.html';
 import RepGraphs from 'assets/images/esports-Analytics-Graphs.png';
 import RepMostEngaging from 'assets/images/esports-ContentReport-MostEngaging.png';
 import RepTeamPlayers from 'assets/images/esports-TeamPlayers.png';
+import EigenPlatform from 'assets/images/eigen-platform.png';
 import Element from 'element-ui';
 
 Vue.use(Element);
@@ -15,9 +16,65 @@ export default Vue.extend({
       displayImg: '',
       jobs: [
         {
+          companyName: 'Eigen Innovations Inc.',
+          role: 'Senior Frontend Developer',
+          dates: 'July 2017 - Present',
+          descriptionPoints: [
+            'Helped redesign Platform offering',
+            'Built frontend from green field using Vue.js and Vuex',
+            'Aided in adjusting teams understanding of frontend development',
+            'Defined proper development flow for frontend team',
+            'Provided support during the hiring process with interviewing and screening potential hires',
+            'Focused on building a team of passionate developers who support each other'
+          ],
+          projects: [
+            {
+              projectName: 'Eigen Platform - Frontend',
+              descriptions: [
+                'Vue.js',
+                'Vuex',
+                'Webpack',
+                'SCSS',
+                'ChartJs',
+                'Echarts',
+                'D3',
+                'Element-UI',
+                'Rest APIs',
+                'Google Tag Manager',
+                'Google Analytics',
+                'Git',
+                'Linux',
+                'BitBucket',
+                'BitBucket Pipelines'
+              ],
+              images: [
+                {
+                  asset: EigenPlatform
+                }
+              ]
+            }, {
+              projectName: 'Eigen HMI',
+              descriptions: [
+                'Built Prototype in 2 weeks',
+                'Vue.js',
+                'Vuex',
+                'Webpack',
+                'SCSS',
+                'Electron',
+                'Shell Scripting',
+                'ZeroMQ',
+                'Message Handling',
+                'Debian Packaging',
+                'Unix Package Manager Integration',
+                'Git',
+                'Linux'
+              ]
+            }
+          ]
+        }, {
           companyName: 'Repable Inc.',
-          role: 'Front-End Developer',
-          dates: 'March 2017 - Present',
+          role: 'Frontend Developer',
+          dates: 'March 2017 - July 2017',
           descriptionPoints: [
             'Expanded Javascript knowledge by learning Vue.js',
             'Built Front-End based on UI/UX mockups',
@@ -28,7 +85,7 @@ export default Vue.extend({
             {
               projectName: 'Repable esports offering',
               descriptions: [
-                'Only Front-End Developer',
+                'Only Frontend Developer',
                 'Vue.js',
                 'Webpack',
                 'SCSS',
@@ -53,7 +110,7 @@ export default Vue.extend({
             }, {
               projectName: 'Repable publisher offering',
               descriptions: [
-                '1 of 2 Front-End Developers',
+                '1 of 2 Frontend Developers',
                 'Vue.js',
                 'Webpack',
                 'SCSS',
@@ -187,7 +244,7 @@ export default Vue.extend({
             {
               projectName: 'Payment System',
               descriptions: [
-                'Only Front-End Developer',
+                'Only Frontend Developer',
                 'ActionScript',
                 'Cascades',
                 'Perforce',
