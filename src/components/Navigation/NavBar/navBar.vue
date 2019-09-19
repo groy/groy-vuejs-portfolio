@@ -3,7 +3,7 @@
     <div class="flex justify-space navbar__main">
       <div class="flex">
         <div class="navbar__brand">
-          <img src="https://scontent.fxds1-1.fna.fbcdn.net/v/t1.0-9/11880559_10153624937429539_3120230861142440333_n.jpg?oh=4335a83446a53a864f96b821b8f07e1a&oe=59CCF648" alt="Greg Royan" @click="goToHome()"> <span class="name"> Greg Royan </span>
+          <img :src="navImage" alt="Greg Royan" @click="goToHome()"> <span class="name"> Greg Royan </span>
         </div>
 
         <ul class="navbar__links">
@@ -23,6 +23,7 @@
 <script>
   import { mixin as clickaway } from 'vue-clickaway';
   import Vue from 'vue';
+  import navImage from 'assets/images/gregBond.jpg';
 
   /**
   *  Vue.js Component for NavBar 
@@ -40,6 +41,7 @@
     },
     data: function () {
       return {
+        navImage,
         query: '',
         search_loading: false,
         toggle: {
@@ -117,3 +119,12 @@
     }
   }
 </script>
+
+<style lang="scss">
+.container {
+  img {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+</style>

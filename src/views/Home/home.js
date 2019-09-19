@@ -1,11 +1,13 @@
 import Vue from 'vue';
 import Skill from 'components/Skill/index.js';
+import profile from 'assets/images/gregBond.jpg';
 import template from './home.html';
 
 export default Vue.extend({
   template,
   data: function() {
     return {
+      profile,
       javascript: [
         {
           label: 'AngularJs',

@@ -34,7 +34,6 @@
       */
       setStar(curStar) {
         let rtnClass = '';
-        console.log(curStar + ' ' + this.skillValue);
 
         if (curStar <= this.skillValue){
           if (this.skillValue <= 1) {
